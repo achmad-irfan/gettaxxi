@@ -56,6 +56,7 @@ first I  need to identify the following data:</p>
 <h4 style="margin-left: 10px">4.1 Data Duplicate Checking</h4>
 <p style="margin-left: 30px"> All the data must be checked whetever there is a duplicate data. The  queery for data duplicate checking :</p>
 <div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<p>  </p>
 <p style="margin-left: 20px"> --data duplicate checking  </p>
 <p style="margin-left: 20px">select order_datetime,origin_longitude, origin_latitude, m_order_eta, order_status_key,is_driver_assigned_key,cancellations_time_in_seconds, count(*)</p>
 <p style="margin-left: 20px">from public.data_order</p>
