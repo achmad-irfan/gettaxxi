@@ -44,9 +44,10 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px"> select min(origin_longitude),max(origin_longitude) from public.data_order --no found abnormal data-- </p>
 <p style="margin-left: 20px"> select min(origin_latitude),max(origin_latitude) from public.data_order --no found abnormal data-- </p>
 <p style="margin-left: 20px"> select min(m_order_eta),max(m_order_eta) from public.data_order --no found abnormal data-- </p>
-<p style="margin-left: 20px"> sele<p style="margin-left: 20px">ct min(order_gk),max(order_gk) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> select min(order_gk),max(order_gk) from public.data_order --no found abnormal data-- </p>
 <p style="margin-left: 20px"> select min(order_status_key),max(order_status_key) from public.data_order --no found abnormal data-- </p>	
-	
+<p style="margin-left: 20px"> select min(is_driver_assigned_key),max(is_driver_assigned_key) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> select min(cancellations_time_in_seconds),max(cancellations_time_in_seconds) from public.data_order --no found abnormal data-- </p>	
 	
 	
 </div> 
