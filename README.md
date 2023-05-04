@@ -48,9 +48,21 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px"> select min(order_status_key),max(order_status_key) from public.data_order --no found abnormal data-- </p>	
 <p style="margin-left: 20px"> select min(is_driver_assigned_key),max(is_driver_assigned_key) from public.data_order --no found abnormal data-- </p>
 <p style="margin-left: 20px"> select min(cancellations_time_in_seconds),max(cancellations_time_in_seconds) from public.data_order --no found abnormal data-- </p>	
-	
-	
 </div> 
+<p style="margin-left: 30px"> Overall in data is not found any abnormal data </p>	
+
+
+<h4 style="margin-left: 10px">4.1 Data Duplicate Checking</h4>
+<p style="margin-left: 30px"> All the data must be checked whetever there is a duplicate data. The  queery for data duplicate checking :</p>
+<div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<p style="margin-left: 20px"> --data duplicate checking  </p>
+<p style="margin-left: 20px">select order_datetime,origin_longitude, origin_latitude, m_order_eta, order_status_key,is_driver_assigned_key,cancellations_time_in_seconds, count(*)</p>
+<p style="margin-left: 20px">from public.data_order</p>
+<p style="margin-left: 20px">group by order_datetime,origin_longitude, origin_latitude, m_order_eta, order_status_key,is_driver_assigned_key,cancellations_time_in_seconds</p>
+<p style="margin-left: 20px">order by count(*) desc</p>
+</div>
+
+<p style="margin-left: 30px"> After checking data output, it's found that there are 4 row data that contain duplicate data although it's have different order_gk, so it must be removed </p>	
 
 <h4 style="margin-left: 10px">4.2 Data Cleansing</h4>
 <p style="margin-left: 30px"> From data validation, found that data time in column timestamp_of_crash  isn't displayed in local time, so it must be converted to local time in every states in USA, the step to convert time is shown in this following item: </p>
