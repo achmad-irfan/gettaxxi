@@ -6,14 +6,12 @@
 <h3> 1. Background Project :</h3>
 <p style="margin-left: 20px;text-align:justify"> This is my personal project and I use postgresql to do. This project is about gettaxi, is an Israeli-developed technology platform solely focused on corporate Ground Transportation Management (GTM). They have an application where clients can order taxis, and drivers can accept their rides (offers). At the moment, when the client clicks the Order button in the application, the matching system searches for the most relevant drivers and offers them the order. In this task, we would like to investigate some matching metrics for orders that did not completed successfully, i.e., the customer didn't end up getting a car</p>
 <h3>2. Purpose:</h3>
-<p style="margin-left: 20px;text-align:justify">  The main purpose is to provide a number of recommendations about how to reduce the number of accidents on the highway. To do this,
+<p style="margin-left: 20px;text-align:justify">  The main purpose is to provide a number of isnight and recomendation about the data. To do this,
 first I  need to identify the following data:</p>
-<p style="margin-left: 20px">•  Top 10 states where the most accidents occur </p>
-<p style="margin-left: 20px">•  The average number of accidents per day by hour accident </p>
-<p style="margin-left: 20px">•  Percentage of accidents caused by drunk drivers </p>
-<p style="margin-left: 20px">•  Percentage of accidents in rural and urban areas </p>
-<p style="margin-left: 20px">•  Number of accidents by day </p>
-
+<p style="margin-left: 20px">•  Build up distribution of orders according to reasons for failure: cancellations before and after driver assignment, and reasons for order rejection. Analyse the resulting plot. Which category has the highest number of orders? </p>
+<p style="margin-left: 20px">•  Plot the distribution of failed orders by hours. Is there a trend that certain hours have an abnormally high proportion of one category or another? What hours are the biggest fails? How can this be explained? </p>
+<p style="margin-left: 20px">•  Plot the average time to cancellation with and without driver, by the hour. If there are any outliers in the data, it would be better to remove them. Can we draw any conclusions from this plot?  </p>
+<p style="margin-left: 20px">•  Plot the distribution of average ETA by hours. How can this plot be explained?</p>
 <h3>3. Dataset:</h3>
 <p style="margin-left: 20px">The project source is from stratascratch platfrom and can be accessed in this following link : <a href="https://platform.stratascratch.com/data-projects/insights-failed-orders">Click here</a></p>
 <p style="margin-left: 20px">Data can be access in the following link : <a href="https://drive.google.com/file/d/1wiFf1VpFRXXUz9XpHjb--6vFDoNiCVDK/view?usp=sharing">Click here</a></p>
