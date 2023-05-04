@@ -2,9 +2,9 @@
 
 
 <h2> Gettaxi</h2>
-<p> URL Dashoboard project (Bonus) : <a href="https://app.powerbi.com/view?r=eyJrIjoiMjI5NDY4NGMtNjg2Zi00ZjA1LWI4Y2UtYWJjOTNhZDYxNmU0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9">NHTSA</a></p>
+<p> URL Dashoboard project (Bonus) : <a href="">Gettaxi</a></p>
 <h3> 1. Background Project :</h3>
-<p style="margin-left: 20px;text-align:justify"> NHTSA is one such department government in the United States focused on reducing the number traffic accident on the highway. Currently NHTSA is brewing a new regulation that will be implemented next year. I was asked to analyze the data collected during 2021. This data is a complete information about accidents that occurred during 2021.</p>
+<p style="margin-left: 20px;text-align:justify"> This is my personal project and I use postgresql to do. This project is about gettaxi, is an Israeli-developed technology platform solely focused on corporate Ground Transportation Management (GTM). They have an application where clients can order taxis, and drivers can accept their rides (offers). At the moment, when the client clicks the Order button in the application, the matching system searches for the most relevant drivers and offers them the order. In this task, we would like to investigate some matching metrics for orders that did not completed successfully, i.e., the customer didn't end up getting a car</p>
 <h3>2. Purpose:</h3>
 <p style="margin-left: 20px;text-align:justify">  The main purpose is to provide a number of recommendations about how to reduce the number of accidents on the highway. To do this,
 first I  need to identify the following data:</p>
@@ -15,6 +15,7 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px">•  Number of accidents by day </p>
 
 <h3>3. Dataset:</h3>
+<p style="margin-left: 20px">The project source is from stratascratch platfrom and can be accessed in this following link : <a href="https://platform.stratascratch.com/data-projects/insights-failed-orders">Click here</a></p>
 <p style="margin-left: 20px">Data can be access in the following link : <a href="https://drive.google.com/file/d/1wiFf1VpFRXXUz9XpHjb--6vFDoNiCVDK/view?usp=sharing">Click here</a></p>
 <h3>4. Data Preparation</h3>
 <h4 style="margin-left: 10px">4.1 Data Validation</h4>
