@@ -14,7 +14,7 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px">•  Plot the distribution of average ETA by hours. How can this plot be explained?</p>
 <h3>3. Dataset:</h3>
 <p style="margin-left: 20px">The project source is from stratascratch platfrom and can be accessed in this following link : <a href="https://platform.stratascratch.com/data-projects/insights-failed-orders">Click here</a></p>
-<p style="margin-left: 20px">Data can be access in the following link : <a href="https://drive.google.com/file/d/1wiFf1VpFRXXUz9XpHjb--6vFDoNiCVDK/view?usp=sharing">Click here</a></p>
+<p style="margin-left: 20px">Data can be access in the following link : <a href="https://docs.google.com/spreadsheets/d/1ZX1L2hk1vAPlnWxEwaG-EnvGeM0fUqBK1O7EGHwZ3KI/edit?usp=sharing">Click here</a></p>
 <p style="margin-left: 20px">Data description:</p>
  <div style="margin-left: 20px;height:450px;width:1000px;border:1px solid #ccc;font:14px/16px Georgia, Garamond, Serif;overflow:auto;">
  <p style="margin-left: 40px">The data_order data set with 8 columns: </p>
