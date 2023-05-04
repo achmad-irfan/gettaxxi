@@ -16,20 +16,21 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px">The project source is from stratascratch platfrom and can be accessed in this following link : <a href="https://platform.stratascratch.com/data-projects/insights-failed-orders">Click here</a></p>
 <p style="margin-left: 20px">Data can be access in the following link : <a href="https://drive.google.com/file/d/1wiFf1VpFRXXUz9XpHjb--6vFDoNiCVDK/view?usp=sharing">Click here</a></p>
 <p style="margin-left: 20px">Data description:</p>
- <div style="margin-left: 20px;height:400px;width:1000px;border:1px solid #ccc;font:14px/16px Georgia, Garamond, Serif;overflow:auto;">
- <p style="margin-left: 40px">order_datetime - time of the order </p>
-<p style="margin-left: 40px">origin_longitude - longitude of the order </p>
-<p style="margin-left: 40px">origin_latitude - latitude of the order </p>
-<p style="margin-left: 40px">m_order_eta - time before order arrival </p>
-<p style="margin-left: 40px">order_gk - order number </p>
-<p style="margin-left: 40px">order_status_key - status, an enumeration consisting of the following mapping: </p>
-<p style="margin-left: 60px">4 - cancelled by client, </p>
-<p style="margin-left: 60px">9 - cancelled by system, i.e., a reject </p>
-<p style="margin-left: 40px">is_driver_assigned_key - whether a driver has been assigned </p>
-<p style="margin-left: 40px">cancellation_time_in_seconds - how many seconds passed before cancellation </p>
-<p style="margin-left: 40px">The data_offers data set is a simple map with 2 columns: </p>
-<p style="margin-left: 60px">order_gk - order number, associated with the same column from the orders data set </p>
-<p style="margin-left: 60px">offer_id - ID of an offer </p>
+ <div style="margin-left: 20px;height:450px;width:1000px;border:1px solid #ccc;font:14px/16px Georgia, Garamond, Serif;overflow:auto;">
+ <p style="margin-left: 40px">The data_order data set with 8 columns: </p>
+<p style="margin-left: 60px">order_datetime - time of the order </p>
+<p style="margin-left: 60px">origin_longitude - longitude of the order </p>
+<p style="margin-left: 60px">origin_latitude - latitude of the order </p>
+<p style="margin-left: 60px">m_order_eta - time before order arrival </p>
+<p style="margin-left: 60px">order_gk - order number </p>
+<p style="margin-left: 60px">order_status_key - status, an enumeration consisting of the following mapping: </p>
+<p style="margin-left: 80px">4 - cancelled by client, </p>
+<p style="margin-left: 80px">9 - cancelled by system, i.e., a reject </p>
+<p style="margin-left: 60px">is_driver_assigned_key - whether a driver has been assigned </p>
+<p style="margin-left: 60px">cancellation_time_in_seconds - how many seconds passed before cancellation </p>
+<p style="margin-left: 60px">The data_offerf data set is a simple map with 2 columns: </p>
+<p style="margin-left: 80px">order_gk - order number, associated with the same column from the orders data set </p>
+<p style="margin-left: 80px">offer_id - ID of an offer </p>
 	
   </div>
 
