@@ -16,7 +16,8 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px">The project source is from stratascratch platfrom and can be accessed in this following link : <a href="https://platform.stratascratch.com/data-projects/insights-failed-orders">Click here</a></p>
 <p style="margin-left: 20px">Data can be access in the following link : <a href="https://drive.google.com/file/d/1wiFf1VpFRXXUz9XpHjb--6vFDoNiCVDK/view?usp=sharing">Click here</a></p>
 <p style="margin-left: 20px">Data description:</p>
-<p style="margin-left: 40px">We have two data sets: data_orders and data_offers, both being stored in a CSV format. Thedata_orders data set contains the following columns:</p>
+ <div style="margin-left: 50px;height:100px;width:1000px;border:1px solid #ccc;font:10px/12px Georgia, Garamond, Serif;overflow:auto;">
+ <p style="margin-left: 40px">We have two data sets: data_orders and data_offers, both being stored in a CSV format. Thedata_orders data set contains the following columns:</p>
 <p style="margin-left: 40px">order_datetime - time of the order </p>
 <p style="margin-left: 40px">origin_longitude - longitude of the order </p>
 <p style="margin-left: 40px">origin_latitude - latitude of the order </p>
@@ -30,6 +31,8 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 40px">The data_offers data set is a simple map with 2 columns: </p>
 <p style="margin-left: 60px">order_gk - order number, associated with the same column from the orders data set </p>
 <p style="margin-left: 60px">offer_id - ID of an offer </p>
+	
+  </div>
 
 
 
