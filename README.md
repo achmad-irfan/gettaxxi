@@ -65,12 +65,8 @@ first I  need to identify the following data:</p>
 </div>
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="dataanalyze4.png" class="img-fluid" alt="">  
+<img src="data duplicate.png" class="img-fluid" alt="">  
 </p>
-
-
-
-
 <p style="margin-left: 30px"> After checking data output, it's found that there are 4 row data that contain duplicate data although it's have different order_gk, so it must be removed </p>	
 
 <h4 style="margin-left: 10px">4.2 Data Cleansing</h4>
