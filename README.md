@@ -16,7 +16,7 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px">The project source is from stratascratch platfrom and can be accessed in this following link : <a href="https://platform.stratascratch.com/data-projects/insights-failed-orders">Click here</a></p>
 <p style="margin-left: 20px">Data can be access in the following link : <a href="https://drive.google.com/file/d/1wiFf1VpFRXXUz9XpHjb--6vFDoNiCVDK/view?usp=sharing">Click here</a></p>
 <p style="margin-left: 20px">Data description:</p>
- <div style="margin-left: 20px;height:1000px;width:1000px;border:1px solid #ccc;font:14px/16px Georgia, Garamond, Serif;overflow:auto;">
+ <div style="margin-left: 20px;height:600px;width:1000px;border:1px solid #ccc;font:14px/16px Georgia, Garamond, Serif;overflow:auto;">
  <p style="margin-left: 40px">order_datetime - time of the order </p>
 <p style="margin-left: 40px">origin_longitude - longitude of the order </p>
 <p style="margin-left: 40px">origin_latitude - latitude of the order </p>
