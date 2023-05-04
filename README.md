@@ -39,6 +39,7 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 30px"> All the data must be checked whetever there is a abnormal data. The  queery for data checking and validating :</p>
 
 <div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
 <p style="margin-left: 20px"> --data validation </p>
 <p style="margin-left: 20px"> select min(order_datetime),max(order_datetime) from public.data_order --no found abnormal data-- </p>
 <p style="margin-left: 20px"> select min(origin_longitude),max(origin_longitude) from public.data_order --no found abnormal data-- </p>
