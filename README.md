@@ -63,6 +63,13 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px">group by order_datetime,origin_longitude, origin_latitude, m_order_eta, order_status_key,is_driver_assigned_key,cancellations_time_in_seconds</p>
 <p style="margin-left: 20px">order by count(*) desc</p>
 </div>
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="dataanalyze4.png" class="img-fluid" alt="">  
+</p>
+
+
+
 
 <p style="margin-left: 30px"> After checking data output, it's found that there are 4 row data that contain duplicate data although it's have different order_gk, so it must be removed </p>	
 
