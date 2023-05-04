@@ -33,41 +33,21 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 60px">offer_id - ID of an offer </p>
 	
   </div>
-
-
-
-
-
-
-
-
-
-
-
+  
 <h3>4. Data Preparation</h3>
 <h4 style="margin-left: 10px">4.1 Data Validation</h4>
 <p style="margin-left: 30px"> All the data must be checked whetever there is a abnormal data. The  queery for data checking and validating :</p>
 
-<div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:10px/12px Georgia, Garamond, Serif;overflow:auto;">
-<p style="font-family:verdana"> count(consecutive_number) from crash ;-- to count consecutive number (unique code in every traffic accident) </p>
-<p style="font-family:verdana"> select count(distinct consecutive_number) from crash ; -- data is equivalent with previous queery </p>
-<p style="font-family:verdana"> select  distinct state_name from crash ; --no abnormal data </p> 
-<p style="font-family:verdana"> select  max(number_of_vehicle_forms_submitted_all), min(number_of_vehicle_forms_submitted_all) from crash ; --no abnormal data </p>
-<p style="font-family:verdana"> select  max(number_of_motor_vehicles_in_transport_mvit), min(number_of_motor_vehicles_in_transport_mvit) from crash; --no abnormal data</p>
-<p style="font-family:verdana"> select  max(number_of_parked_working_vehicles), min(number_of_parked_working_vehicles) from crash; --no abnormal data</p>
- <p style="font-family:verdana"> select  max(number_of_forms_submitted_for_persons_not_in_motor_vehicles), min(number_of_forms_submitted_for_persons_not_in_motor_vehicles) from crash --no abnormal data ;</p>
-<p style="font-family:verdana"> select  max(number_of_persons_in_motor_vehicles_in_transport_mvit), min(number_of_persons_in_motor_vehicles_in_transport_mvit) from crash ; --no abnormal data </p>
-<p style="font-family:verdana"> select  max(number_of_persons_not_in_motor_vehicles_in_transport_mvit), min(number_of_persons_not_in_motor_vehicles_in_transport_mvit) from crash ; --no abnormal data</p>
-<p style="font-family:verdana"> select distinct land_use_name from crash ; --no abnormal data</p>
-<p style="font-family:verdana"> select distinct functional_system_name from crash ; --no abnormal data</p>
-<p style="font-family:verdana"> select min(milepoint),max(milepoint) from crash ; --no abnormal data</p>
-<p style="font-family:verdana"> select distinct manner_of_collision_name from crash ;--no abnormal data</p>
-<p style="font-family:verdana"> select distinct type_of_intersection_name from crash   ;--no abnormal data</p>
-<p style="font-family:verdana"> select distinct light_condition_name from crash ;--no abnormal data</p>
-<p style="font-family:verdana"> select distinct atmospheric_conditions_1_name from crash ;--no abnormal data</p>
-<p style="font-family:verdana"> select distinct number_of_fatalities from crash   ; --no abnormal data</p>
-<p style="font-family:verdana"> select distinct number_of_drunk_drivers from crash  ; --no abnormal data</p>
-<p style="font-family:verdana"> select min(timestamp_of_crash),max(timestamp_of_crash) from crash  ; -- found that time is not in local state of USA, so it must to convert to local time</p>
+<div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+--data validation
+<p style="margin-left: 20px"> select min(order_datetime),max(order_datetime) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> select min(origin_longitude),max(origin_longitude) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> select min(origin_latitude),max(origin_latitude) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> select min(m_order_eta),max(m_order_eta) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> sele<p style="margin-left: 20px">ct min(order_gk),max(order_gk) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> select min(order_status_key),max(order_status_key) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> select min(is_driver_assigned_key),max(is_driver_assigned_key) from public.data_order --no found abnormal data-- </p>
+<p style="margin-left: 20px"> select min(cancellations_time_in_seconds),max(cancellations_time_in_seconds) from public.data_order --no found abnormal data-- </p>
 </div>
 
 <h4 style="margin-left: 10px">4.2 Data Cleansing</h4>
