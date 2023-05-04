@@ -39,16 +39,8 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 30px"> All the data must be checked whetever there is a abnormal data. The  queery for data checking and validating :</p>
 
 <div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
-<p style="margin-left: 20px"> --data validation </p>
-<p style="margin-left: 20px"> select min(order_datetime),max(order_datetime) from public.data_order --no found abnormal data-- </p>
-<p style="margin-left: 20px"> select min(origin_longitude),max(origin_longitude) from public.data_order --no found abnormal data-- </p>
-<p style="margin-left: 20px"> select min(origin_latitude),max(origin_latitude) from public.data_order --no found abnormal data-- </p>
-<p style="margin-left: 20px"> select min(m_order_eta),max(m_order_eta) from public.data_order --no found abnormal data-- </p>
-<p style="margin-left: 20px"> sele<p style="margin-left: 20px">ct min(order_gk),max(order_gk) from public.data_order --no found abnormal data-- </p>
-<p style="margin-left: 20px"> select min(order_status_key),max(order_status_key) from public.data_order --no found abnormal data-- </p>
-<p style="margin-left: 20px"> select min(is_driver_assigned_key),max(is_driver_assigned_key) from public.data_order --no found abnormal data-- </p>
-<p style="margin-left: 20px"> select min(cancellations_time_in_seconds),max(cancellations_time_in_seconds) from public.data_order --no found abnormal data-- </p>
-</div> </div>
+
+</div> 
 
 <h4 style="margin-left: 10px">4.2 Data Cleansing</h4>
 <p style="margin-left: 30px"> From data validation, found that data time in column timestamp_of_crash  isn't displayed in local time, so it must be converted to local time in every states in USA, the step to convert time is shown in this following item: </p>
