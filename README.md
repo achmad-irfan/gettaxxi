@@ -70,52 +70,28 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 30px"> After checking data output, it's found that there are 4 row data that contain duplicate data although it's have different order_gk, so it must be removed </p>	
 
 <h4 style="margin-left: 10px">4.2 Data Cleansing</h4>
-<p style="margin-left: 30px"> From data validation, found that data time in column timestamp_of_crash  isn't displayed in local time, so it must be converted to local time in every states in USA, the step to convert time is shown in this following item: </p>
-<h4 style="margin-left: 45px">• Import table local time of states USA to the same server as main table</h4>
-<p style="margin-left: 50px"> This table is contain the code of local time is every states in USA, new table can be access in the following link : <a href="https://docs.google.com/spreadsheets/d/1I4XkiuiteYmqRUeOvniIAuO7CPi0wFmr8j85eGVXJJQ/edit?usp=sharing">Click here</a></p>
-<p style="margin-left: 47px">output:<p>
+<p style="margin-left: 30px"> From data validation, found that there are 4 rows of duplicate data although it have a different order_ok, so it must be removed, the querry for removing these duplicate rows: </p>
+<div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px"> --removing duplicate data </p>
+<p style="margin-left: 20px">delete from  public.data_order </p>
+<p style="margin-left: 20px">WHERE order_gk IN (</p>
+<p style="margin-left: 20px">    SELECT order_gk FROM public.data_order</p>
+<p style="margin-left: 20px">    EXCEPT SELECT MIN(order_gk) FROM public.data_order</p>
+<p style="margin-left: 20px">    GROUP BY order_datetime,origin_longitude, origin_latitude, m_order_eta, order_status_key,is_driver_assigned_key,cancellations_time_in_seconds</p>
+<p style="margin-left: 20px">    )</p>
+</div> 
+<p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="importnewtable.png" class="img-fluid" alt="">  
+<img src="data duplicate after.png" class="img-fluid" alt="">  
 </p>
-<h4 style="margin-left: 43px">• Add new coloumn in main table </h4>
-<p style="margin-left: 50px">Querry for add new coloumn in table crash:
- <div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:10px/12px Georgia, Garamond, Serif;overflow:auto;">
-  <p style="font-family:verdana"> alter table	crash </p>
-  <p style="font-family:verdana">add column	timezone_code text,</p>
-  <p style="font-family:verdana">add column	local_time timestamp </p>
-  </div>
-  <p style="margin-left: 47px">output:<p>
-<p align="center"> 
-<img src="addcolumn.png" class="img-fluid" alt="">  
-</p>
-<h4 style="margin-left: 43px">• Insert data in new coloumn </h4>
-<p style="margin-left: 50px">Querry for add data in column timezone_code in  table crash based on data in table us_timezone:
- <div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:10px/12px Georgia, Garamond, Serif;overflow:auto;">
-  <p style="font-family:verdana"> update	crash</p>
-  <p style="font-family:verdana"> set 	timezone_code = </p>
- <p style="font-family:verdana">	(select code </p>
-	 <p style="font-family:verdana"> from	timezone </p>
-	 <p style="font-family:verdana"> where	crash.state_name = timezone.state_name) </p>
-  </div>
-   <p style="margin-left: 47px">output:<p>
-<p align="center"> 
-<img src="insertdata1.png" class="img-fluid" alt="">  
-</p>
-  <p style="margin-left: 43px">Querry for add data in column local_time in  table crash :
- <div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:10px/12px Georgia, Garamond, Serif;overflow:auto;">
-   <p style="font-family:verdana"> update	crash </p>
-   <p style="font-family:verdana"> set		local_time = timestamp_of_crash at time zone timezone_code </p>
-  </div>
-    <p style="margin-left: 47px">output:<p>
-<p align="center"> 
-<img src="insertdata2.png" class="img-fluid" alt="">  
-</p>
-<h4 style="margin-left: 43px">• Remove data before and after 2022 </h4>
-<p style="margin-left: 50px">Querry for Remove data before and after 2022 table crash :
- <div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:10px/12px Georgia, Garamond, Serif;overflow:auto;">
-	 <p style="font-family:verdana">  delete from	crash </p>
-  <p style="font-family:verdana">  where local_time not between '2021-01-01 00:00:00' and '2021-12-31 23:59:59' </p>
-  </div>
+
+
+
+
+
+
+
   
 <h3>5. Data Analyze:</h3>
 <p style="margin-left: 20px;text-align:justify">The querry for identify the following item  :</p>
