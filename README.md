@@ -147,18 +147,30 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 30px"> Query: </p>
 <div style="margin-left: 30px;height:75px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 <p> </p>
-<p style="margin-left: 20px">select extract(hour from order_datetime) "Hour", count(order_gk) total from public.data_order</p>
-<p style="margin-left: 20px">group by "Hour"</p>
-<p style="margin-left: 20px">order by total desc</p>
+<p style="margin-left: 20px">select is_driver_assigned_key, avg(cancellations_time_in_seconds) </p>
+<p style="margin-left: 20px">from public.data_order</p>
+<p style="margin-left: 20px">group  by is_driver_assigned_key</p>
 </div> 
 
-
 <p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="avgcancel.png" class="img-fluid" alt="">  
+</p>
+
+
 <h4 style="margin-left: 20px">Distribution of average ETA by hours</h4>
 <p style="margin-left: 30px"> Query: </p>
+<div style="margin-left: 30px;height:75px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<p> </p>
+<p style="margin-left: 20px">select extract(hour from order_datetime) "Hour",  avg(m_order_eta) average_eta from public.data_order</p>
+<p style="margin-left: 20px">group by "Hour"</p>
+<p style="margin-left: 20px">order by average_eta desc</p>
+</div> 
+
 <p style="margin-left: 30px"> Output: </p>
-
-
+<p align="center"> 
+<img src="average order eta.png" class="img-fluid" alt="">  
+</p>
 
 
 
