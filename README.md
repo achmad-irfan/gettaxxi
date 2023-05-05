@@ -95,6 +95,21 @@ first I  need to identify the following data:</p>
 
   
 <h3>5. Data Analyze:</h3>
+<h4 style="margin-left: 20px">Distribution of orders according to reasons for failure</h4>
+	<p style="margin-left: 30px"> Query: </p>
+	<p style="margin-left: 30px"> Output: </p>
+<h4 style="margin-left: 20px">Distribution of failed orders by hours</h4>
+	<p style="margin-left: 30px"> Query: </p>
+	<p style="margin-left: 30px"> Output: </p>
+<h4 style="margin-left: 20px">Average time to cancellation with and without driver,</h4>
+	<p style="margin-left: 30px"> Query: </p>
+	<p style="margin-left: 30px"> Output: </p>
+<h4 style="margin-left: 20px">Distribution of average ETA by hours</h4>
+	<p style="margin-left: 30px"> Query: </p>
+	<p style="margin-left: 30px"> Output: </p>
+
+
+
 
 
 <h3>6. Insight and Recomendation</h3>
