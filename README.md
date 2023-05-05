@@ -175,4 +175,7 @@ first I  need to identify the following data:</p>
 
 
 <h3>6. Insight and Recomendation</h3>
-
+<p style="margin-left: 30px"> • Based on data, 70% of cancellation of order is canceled by customer </p>
+<p style="margin-left: 30px"> • The time around 8 am is the time with the most of cancellation order  </p>
+<p style="margin-left: 30px"> • The average time of cancellation order when driver driver has been assigned is 230 seconds   </p>
+<p style="margin-left: 30px"> • The longest of ETA order is about in 8 am , around 600 s (5 minutes)   </p>
