@@ -110,6 +110,40 @@ first I  need to identify the following data:</p>
 </p>
 
 <h4 style="margin-left: 20px">Distribution of failed orders by hours</h4>
+<p style="margin-left: 30px"> Query for total per hour: </p>
+<div style="margin-left: 30px;height:75px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<p> </p>
+<p style="margin-left: 20px">select extract(hour from order_datetime) "Hour", count(order_gk) total from public.data_order</p>
+<p style="margin-left: 20px">group by "Hour"</p>
+<p style="margin-left: 20px">order by total desc</p>
+</div> 
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="hour.png" class="img-fluid" alt="">  
+</p>
+
+<p style="margin-left: 30px"> Query for total per group hour: </p>
+<div style="margin-left: 30px;height:75px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<p> </p>
+<p style="margin-left: 20px">select </p>
+<p style="margin-left: 20px">case</p>
+<p style="margin-left: 20px">when extract(hour from order_datetime) between 0 and 6  then '00-06'</p>
+<p style="margin-left: 20px">when extract(hour from order_datetime) between 7 and 9  then '07-09'</p>
+<p style="margin-left: 20px">when extract(hour from order_datetime) between 10 and 15  then '10-15'</p>
+<p style="margin-left: 20px">when extract(hour from order_datetime) between 15 and 20  then '15-20'</p>
+<p style="margin-left: 20px"></p>
+<p style="margin-left: 20px">end "group hour",count(order_gk) total  from public.data_order</p>
+<p style="margin-left: 20px">group by "group hour"</p>
+<p style="margin-left: 20px">order by total desc</p>
+</div> 
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="group hour.png" class="img-fluid" alt="">  
+</p>
+
+<h4 style="margin-left: 20px">Average time to cancellation with and without driver,</h4>
 <p style="margin-left: 30px"> Query: </p>
 <div style="margin-left: 30px;height:75px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 <p> </p>
@@ -119,15 +153,6 @@ first I  need to identify the following data:</p>
 </div> 
 
 
-<p style="margin-left: 30px"> Output: </p>
-<p style="margin-left: 30px"> Output: </p>
-<p align="center"> 
-<img src="hour.png" class="img-fluid" alt="">  
-</p>
-
-
-<h4 style="margin-left: 20px">Average time to cancellation with and without driver,</h4>
-<p style="margin-left: 30px"> Query: </p>
 <p style="margin-left: 30px"> Output: </p>
 <h4 style="margin-left: 20px">Distribution of average ETA by hours</h4>
 <p style="margin-left: 30px"> Query: </p>
