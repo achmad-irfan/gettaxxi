@@ -175,11 +175,11 @@ first I  need to identify the following data:</p>
 
 
 <h3>6. Insight and Recomendation</h3>
-<h4 style="margin-left: 20px">>6.1 Insight</h4>
-<p style="margin-left: 30px"> • Based on data, 70% of cancellation of order is canceled by customer and 30% cancellation is by system</p>
-<p style="margin-left: 30px"> • The time around 8 am is the time with the most of cancellation order  </p>
-<p style="margin-left: 30px"> • The average time of cancellation order when driver driver has been assigned is 230 seconds (4 minutes)  </p>
-<p style="margin-left: 30px"> • The longest of ETA order is about in 8 am , around 600 s (5 minutes)   </p>
-<h4 style="margin-left: 20px">>6.2 Reccmendation</h4>
-<p style="margin-left: 30px"> • After looking at the data above, because of the high number of cancellations, besides that the time before order arrival is also very long at 8 am, then you should be able to improve the user experience by updating the application or system to be more user-friendly, updating information about the driver and vehicles in real-time, and introduced an option for users to view estimated wait times and update their location automatically/p>
-<p style="margin-left: 30px"> • If possible, you may consider offering promotions or special discounts during peak hours to increase the number of orders and reduce the cancellation rate for taxi orders. /p>
+<h4 style="margin-left: 20px">6.1 Insight</h4>
+<p style="margin-left: 40px"> • Based on data, 70% of cancellation of order is canceled by customer and 30% cancellation is by system</p>
+<p style="margin-left: 40px"> • The time around 8 am is the time with the most of cancellation order  </p>
+<p style="margin-left: 40px"> • The average time of cancellation order when driver driver has been assigned is 230 seconds (4 minutes)  </p>
+<p style="margin-left: 40px"> • The longest of ETA order is about in 8 am , around 600 s (5 minutes)   </p>
+<h4 style="margin-left: 20px"> 6.2 Reccmendation</h4>
+<p style="margin-left: 40px"> • After looking at the data above, because of the high number of cancellations, besides that the time before order arrival is also very long at 8 am, then you should be able to improve the user experience by updating the application or system to be more user-friendly, updating information about the driver and vehicles in real-time, and introduced an option for users to view estimated wait times and update their location automatically/p>
+<p style="margin-left: 40px"> • If possible, you may consider offering promotions or special discounts during peak hours to increase the number of orders and reduce the cancellation rate for taxi orders. /p>
