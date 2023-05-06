@@ -4,7 +4,7 @@
 <h2> Gettaxi</h2>
 <p> URL Dashoboard project (Bonus) : <a href="">Gettaxi</a></p>
 <h3> 1. Background Project :</h3>
-<p style="margin-left: 20px;text-align:justify"> This is my personal project and I use postgresql to do. This project is about gettaxi, is an Israeli-developed technology platform solely focused on corporate Ground Transportation Management (GTM). They have an application where clients can order taxis, and drivers can accept their rides (offers). At the moment, when the client clicks the Order button in the application, the matching system searches for the most relevant drivers and offers them the order. In this task, we would like to investigate some matching metrics for orders that did not completed successfully, i.e., the customer didn't end up getting a car</p>
+<p style="margin-left: 20px;align=justify"> This is my personal project and I use postgresql to do. This project is about gettaxi, is an Israeli-developed technology platform solely focused on corporate Ground Transportation Management (GTM). They have an application where clients can order taxis, and drivers can accept their rides (offers). At the moment, when the client clicks the Order button in the application, the matching system searches for the most relevant drivers and offers them the order. In this task, we would like to investigate some matching metrics for orders that did not completed successfully, i.e., the customer didn't end up getting a car</p>
 <h3>2. Purpose:</h3>
 <p style="margin-left: 20px;text-align:justify">  The main purpose is to provide a number of isnight and recomendation about the data. To do this,
 first I  need to identify the following data:</p>
